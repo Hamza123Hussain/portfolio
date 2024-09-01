@@ -1,5 +1,6 @@
 // components/HomePage.tsx
 
+import SomeProjects from '@/components/SomeProjects'
 import { FC } from 'react'
 import { FaReact, FaNodeJs, FaCss3Alt, FaDatabase } from 'react-icons/fa'
 import {
@@ -107,10 +108,10 @@ const HomePage: FC = () => {
     <div>
       {/* Hero Section */}
       <section className="bg-gray-900 text-gray-200 h-screen flex flex-col justify-center items-center text-center p-6">
-        <h1 className="text-5xl font-bold mb-4">Hamza Hussain</h1>
-        <p className="text-xl mb-6">
-          Frontend Developer & Backend Engineer | Crafting Seamless User
-          Experiences
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4">Hamza Hussain</h1>
+        <p className="text-base sm:text-xl mb-6">
+          Full-Stack Developer | Creating Innovative Solutions with Cutting-Edge
+          Technologies
         </p>
         <a
           href="/resume.pdf" // Pointing to the resume file in the public directory
@@ -124,8 +125,10 @@ const HomePage: FC = () => {
       {/* About Preview */}
       <section id="about" className="bg-gray-800 text-gray-200 py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-          <p className="text-lg mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+            About Me
+          </h2>
+          <p className="text-base sm:text-lg mb-6">
             I’m a passionate web developer with a strong foundation in frontend
             and backend technologies. I specialize in creating dynamic and
             responsive web applications with a focus on clean code and
@@ -141,51 +144,20 @@ const HomePage: FC = () => {
         </div>
       </section>
 
-      {/* Featured Projects */}
-      <section id="projects" className="bg-gray-900 text-gray-200 py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
-            Featured Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                <p className="text-lg mb-4">{project.description}</p>
-                <div className="flex flex-wrap mb-4">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="flex items-center text-sm mr-4 mb-2"
-                    >
-                      {technologyIcons[tech]} {tech}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href={project.link}
-                  className="text-teal-400 hover:underline"
-                >
-                  View Project
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SomeProjects />
 
       {/* Skills Summary */}
       <section id="skills" className="bg-gray-800 text-gray-200 py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">Skills</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+            Skills
+          </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {skills.map((skill) => (
-              <div key={skill.name} className="flex items-center gap-2 text-lg">
+              <div
+                key={skill.name}
+                className="flex items-center gap-2 text-base sm:text-lg"
+              >
                 <span>{skill.icon}</span> {skill.name}
               </div>
             ))}

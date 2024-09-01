@@ -1,4 +1,4 @@
-// components/ProjectsSection.tsx
+// components/SomeProjects.tsx
 import { LucideIcon } from 'lucide-react'
 import { FC } from 'react'
 import {
@@ -199,62 +199,6 @@ const technologyIcons: Record<Technology, JSX.Element> = {
 
 const projects: Project[] = [
   {
-    title: 'Thought Flow',
-    description:
-      'Thought Flow is a dynamic blogging platform designed to empower creativity and foster meaningful discussions. It offers features like blog writing with AI-powered tools, interactive community engagement, and profile customization. Built with Node.js, Express, Next.js, Tailwind CSS, React Icons, and Firebase, Thought Flow bridges traditional blogging with the future of content creation.',
-    technologies: [
-      'Node.js',
-      'Express',
-      'Next.js',
-      'Tailwind CSS',
-      'React Icons',
-      'Lucide React',
-      'Firebase',
-      'Axios',
-      'Multer',
-      'Nodemon',
-      'UUID',
-    ],
-    link: 'https://thoughtflow-ax6h9mmyi-hamza123hussains-projects.vercel.app/',
-    image: '/9.png',
-  },
-  {
-    title: 'Ecommerce Website',
-    description:
-      'This fully functional e-commerce website redefines online shopping with a seamless experience for browsing products, placing orders, and receiving instant email confirmations. Admins can manage products, orders, and user registrations. Technologies include Next.js, TypeScript, Clerk.js for authentication, Supabase for data management, and various UI/UX enhancements with MUI, Emotion, and Framer Motion.',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Clerk.js',
-      'Supabase',
-      'Nodemailer',
-      'Framer Motion',
-      'React Spinners',
-      'Lucide React',
-      'React Hot Toast',
-      'Axios',
-      'Tailwind CSS',
-    ],
-    link: 'https://ecommerce-nextjs-tau-vert.vercel.app/',
-    image: '/2.png',
-  },
-  {
-    title: 'CharagDin Admin Panel',
-    description:
-      'The CharagDin Admin Panel is a comprehensive tool for managing furniture inventory. Built with Next.js and React for a responsive UI, Firebase for authentication, and Node.js & Express for the backend. Tailwind CSS ensures a sleek design, while Vercel provides reliable hosting. Features include product and category management, enhancing the operations of CharagDin, a leader in the furniture industry.',
-    technologies: [
-      'Next.js',
-      'React',
-      'Firebase',
-      'Node.js',
-      'Express',
-      'Tailwind CSS',
-      'Vercel',
-    ],
-    link: 'https://charagdin-admin.vercel.app/',
-    image: '/11.png',
-  },
-  {
     title: 'Brain Buster',
     description:
       'This website allows users to create multiple-choice quizzes with the help of AI and also provides the functionality for users to attempt quizzes created by others. The platform leverages AI to generate questions and answers, making quiz creation more efficient and engaging.',
@@ -270,73 +214,7 @@ const projects: Project[] = [
     link: 'https://file-storage-web-application.vercel.app/',
     image: '/1.png',
   },
-  {
-    title: 'IntelliResume',
-    description:
-      'IntelliResume is a Next.js-powered web application that revolutionizes resume building with AI-driven features. Users can effortlessly create detailed resume descriptions with Gemini API’s advanced AI. It offers extensive customization options and easy download formats. Technologies used include Clerk.js, Supabase, Shadn UI, and Axios.',
-    technologies: [
-      'Next.js',
-      'Clerk.js',
-      'Supabase',
-      'Shadn UI',
-      'Axios',
-      'Tailwind CSS',
-      'React.js',
-    ],
-    link: 'https://ai-resume-builder-chi.vercel.app/',
-    image: '/4.png',
-  },
-  {
-    title: 'Note Secure',
-    description:
-      'Note Secure is a sophisticated and secure web application designed to elevate your note-taking experience with the latest web technologies. It features powerful search functionality, efficient note organization, an elegant and responsive design, secure authentication, a robust backend, a scalable database, advanced state management, and real-time notifications.',
-    technologies: [
-      'Next.js',
-      'Node.js',
-      'Express',
-      'Tailwind CSS',
-      'ShadCN UI',
-      'Clerk',
-      'MongoDB',
-      'Redux',
-      'Toast Notifications',
-    ],
-    link: 'https://notes-app-node-next.vercel.app/',
-    image: '/10.png',
-  },
-  {
-    title: 'MockMaster ProPrep',
-    description:
-      'MockMaster ProPrep is a Next.js web app transforming job interview preparation with AI. It offers customized mock interviews, real-time speech-to-text using React Hook Speech to Text, and integration of React Webcam for realistic simulations. Technologies include Clerk.js for authentication, Shadn UI for the interface, and Neon Postgres managed through Drizzle for backend support.',
-    technologies: [
-      'Next.js',
-      'Clerk.js',
-      'Shadn UI',
-      'Gemini AI',
-      'Neon Postgres',
-      'Drizzle',
-      'Lucide React',
-      'Tailwind CSS',
-      'React.js',
-    ],
-    link: 'https://mock-interview-web-app.vercel.app/',
-    image: '/3.png',
-  },
-  {
-    title: 'ChatStream',
-    description:
-      'This website allows users to chat with each other in real time and share pictures. It provides a seamless messaging experience with features for sending text and multimedia content, making it ideal for both casual and professional communication.',
-    technologies: [
-      'Next.js',
-      'Tailwind CSS',
-      'Node.js',
-      'Express',
-      'Socket.IO',
-      'Firebase',
-    ],
-    link: 'https://chatstream-lime.vercel.app',
-    image: '/31.png',
-  },
+
   {
     title: 'Quick Suggest',
     description:
@@ -355,42 +233,6 @@ const projects: Project[] = [
     link: 'https://sass-ai-next-js-14.vercel.app/',
     image: '/12.png',
   },
-  {
-    title: 'CineScope',
-    description:
-      'CineScope is an IMDb clone developed with Next.js and Tailwind CSS. It features lightning-speed search, seamless pagination, and visually stunning movie cards. The site provides a smooth and engaging experience for users to explore movies in detail.',
-    technologies: ['Next.js', 'Tailwind CSS'],
-    link: 'https://imdb-clone-seven-iota.vercel.app/',
-    image: '/5.png',
-  },
-  {
-    title: 'File Share Application',
-    description:
-      'The website allows users to share files with others via email. Users can upload files and specify recipient email addresses to send the files directly through the platform.',
-    technologies: ['Next.js', 'Node.js', 'Firebase', 'Nodemailer', 'Clerk'],
-    link: 'https://next-js-file-share-application.vercel.app/',
-    image: '/7.png',
-  },
-  {
-    title: 'Logo Maker',
-    description:
-      "This website allows users to create various kinds of logos easily. The platform offers customizable design tools to craft logos tailored to the user's preferences, making it suitable for individuals and businesses looking to create unique branding elements.",
-    technologies: [
-      'Next.js',
-      'React.js',
-      // Add any additional technologies used
-    ],
-    link: 'https://logo-maker-nextjs-bvxb.vercel.app/',
-    image: '/13.png',
-  },
-  {
-    title: 'Baig Farm Project',
-    description:
-      'The website is designed for a cattle organization where buyers can browse available cattle, view detailed information, and contact the organization to purchase. Once a cattle is sold, the organization updates its status to "sold" on the website, ensuring that buyers have access to the most current availability information.',
-    technologies: ['Next.js', 'Node.js', 'Firebase'],
-    link: 'https://baig-farm-project-ag7l.vercel.app/',
-    image: '/6.png',
-  },
 ]
 
 interface Project {
@@ -401,16 +243,16 @@ interface Project {
   image: string
 }
 
-const ProjectsSection: FC = () => {
+const SomeProjects: FC = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-900 text-white mt-10">
+    <section id="projects" className="py-16 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4   gap-8">
+        <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 space-y-4">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-gray-800 rounded-lg shadow-lg flex flex-col border-2 border-slate-600"
+              className="bg-gray-800 rounded-lg shadow-lg flex flex-col border-2 border-slate-60"
             >
               <img
                 src={project.image}
@@ -428,11 +270,11 @@ const ProjectsSection: FC = () => {
                   <div className=" flex flex-col gap-3">
                     {' '}
                     <h6 className=" block">Tech Stack</h6>
-                    <div className="flex flex-wrap gap-3 mb-4 ">
+                    <div className="flex flex-wrap gap-3 mb-4">
                       {project.technologies.map((tech) => (
                         <div
                           key={tech}
-                          className="flex items-center text-sm gap-2 "
+                          className="flex items-center text-sm gap-2"
                         >
                           <span>{technologyIcons[tech]}</span>{' '}
                           <span>{tech}</span>
@@ -460,4 +302,4 @@ const ProjectsSection: FC = () => {
   )
 }
 
-export default ProjectsSection
+export default SomeProjects

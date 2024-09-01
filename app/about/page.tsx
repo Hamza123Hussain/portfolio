@@ -13,7 +13,7 @@ const AboutMeSection = () => {
     <section id="about" className="bg-gray-900 text-gray-200 py-16 mt-10 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
-        <div className="grid grid-cols-1 gap-12 text-justify">
+        <div className="grid grid-cols-1 gap-12">
           <div>
             <p className="text-lg mb-4">
               Hi, I am Hamza Hussain, a web developer based in Lahore, Pakistan.
@@ -25,7 +25,7 @@ const AboutMeSection = () => {
               development technologies and building a strong foundation in both
               frontend and backend development. My academic projects and
               personal endeavors have given me hands-on experience with tools
-              like React.js, Next.js, Express.js and Node.js.
+              like React.js, Next.js, Express.js, and Node.js.
             </p>
             <p className="text-lg mb-4">
               I am passionate about creating dynamic and responsive web
