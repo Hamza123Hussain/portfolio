@@ -9,6 +9,7 @@ import {
   FaNode,
   FaJsSquare,
   FaTerminal,
+  FaServer,
 } from 'react-icons/fa'
 import {
   SiTailwindcss,
@@ -89,6 +90,7 @@ type Technology =
   | 'Auth0'
   | 'ShadCN UI'
   | 'Clerk'
+  | 'Socket.IO'
   | 'Redux'
   | 'Toast Notifications'
   | 'Helmet'
@@ -161,6 +163,7 @@ const technologyIcons: Record<Technology, JSX.Element> = {
   'Music Recommendation': (
     <GiClapperboard className="inline-block w-6 h-6 mr-2 text-purple-600" />
   ), // Placeholder icon
+  'Socket.IO': <FaServer />,
   'Movie Suggestions': (
     <GiClapperboard className="inline-block w-6 h-6 mr-2 text-red-600" />
   ), // Placeholder icon
@@ -348,6 +351,21 @@ const projects: Project[] = [
     image: '/12.png', // Update with actual image path
   },
   {
+    title: 'ChatStream',
+    description:
+      'This website allows users to chat with each other in real time and share pictures. It provides a seamless messaging experience with features for sending text and multimedia content, making it ideal for both casual and professional communication.',
+    image: '/31.png', // Replace with your actual image URL
+    link: 'https://chatstream-lime.vercel.app', // Replace with the actual link to the website
+    technologies: [
+      'Next.js',
+      'Tailwind CSS',
+      'Node.js',
+      'Express',
+      'Socket.IO',
+      'Firebase',
+    ],
+  },
+  {
     title: 'Cloud Cabinet',
     description:
       'Cloud Cabinet is a Next.js-powered file storage web application utilizing Supabase for database management, Auth0 for authentication, and Shadcn UI components for a sleek user interface. It allows users to effortlessly upload, organize, and share files. Key features include secure file storage, easy drag-and-drop uploads, efficient file management with folders and tags, and Supabase storage to store files and retrieve download URLs. Cloud Cabinet ensures data security and provides a reliable solution for personal and professional file management.',
@@ -413,8 +431,12 @@ const ProjectsSection: FC = () => {
                     <h6 className=" block">Tech Stack</h6>
                     <div className="flex flex-wrap gap-3 mb-4">
                       {project.technologies.map((tech) => (
-                        <div key={tech} className="flex items-center text-sm">
-                          {technologyIcons[tech]} {tech}
+                        <div
+                          key={tech}
+                          className="flex items-center text-sm gap-2"
+                        >
+                          <span>{technologyIcons[tech]}</span>{' '}
+                          <span>{tech}</span>
                         </div>
                       ))}
                     </div>

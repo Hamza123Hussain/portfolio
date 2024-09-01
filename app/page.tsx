@@ -113,8 +113,9 @@ const HomePage: FC = () => {
           Experiences
         </p>
         <a
-          href="/path-to-resume.pdf"
-          className="bg-teal-400 text-gray-900 py-3 px-6 rounded hover:bg-gray-900 hover:text-teal-400 transition-colors"
+          href="/resume.pdf" // Pointing to the resume file in the public directory
+          download // This attribute suggests to the browser that it should download the file instead of opening it
+          className="bg-teal-400 text-gray-900 py-2 px-4 rounded hover:bg-gray-900 hover:text-teal-400 transition-colors"
         >
           Download Resume
         </a>

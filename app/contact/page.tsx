@@ -1,8 +1,50 @@
-// components/ContactSection.tsx
-
-import { FC } from 'react'
+'use client'
+import { FC, useState, FormEvent } from 'react'
+import axios from 'axios'
 
 const ContactSection: FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+
+    try {
+      // Perform the form submission using Axios
+      const response = await axios.post(
+        'https://formspree.io/f/mqaznrwn',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      )
+
+      if (response.status === 200) {
+        // Handle success response if needed
+        console.log('Success:', response.data)
+        // Clear the form fields
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        console.error('Unexpected response:', response)
+      }
+    } catch (error) {
+      // Handle error response if needed
+      console.error('Error:', error)
+    }
+  }
+
   return (
     <section
       id="contact"
@@ -14,8 +56,7 @@ const ContactSection: FC = () => {
           {/* Contact Form */}
           <div>
             <form
-              action="https://formspree.io/f/your-form-id" // Update with your Formspree or other form handling URL
-              method="POST"
+              onSubmit={handleSubmit}
               className="bg-gray-800 p-6 rounded-lg shadow-lg"
             >
               <div className="mb-4">
@@ -26,6 +67,8 @@ const ContactSection: FC = () => {
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded"
                 />
@@ -38,6 +81,8 @@ const ContactSection: FC = () => {
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded"
                 />
@@ -50,6 +95,8 @@ const ContactSection: FC = () => {
                   id="message"
                   name="message"
                   rows={4}
+                  value={formData.message}
+                  onChange={handleChange}
                   required
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded"
                 ></textarea>
@@ -98,7 +145,7 @@ const ContactSection: FC = () => {
               <li className="flex items-center">
                 <i className="fab fa-github text-teal-400 mr-3"></i>
                 <a
-                  href="https://github.com/your-github-username"
+                  href="https://github.com/Hamza123Hussain"
                   className="hover:underline"
                 >
                   GitHub Profile
