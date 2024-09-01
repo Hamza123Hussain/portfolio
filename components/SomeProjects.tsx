@@ -245,14 +245,14 @@ interface Project {
 
 const SomeProjects: FC = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-900 text-white">
+    <section id="projects" className="py-16 bg-gray-900 text-white mt-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 space-y-4 border-2 border-slate-600">
+        <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4   gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-gray-800 rounded-lg shadow-lg flex flex-col border-2 border-slate-60"
+              className="bg-gray-800 rounded-lg shadow-lg flex flex-col border-2 border-slate-600"
             >
               <img
                 src={project.image}
@@ -270,11 +270,11 @@ const SomeProjects: FC = () => {
                   <div className=" flex flex-col gap-3">
                     {' '}
                     <h6 className=" block">Tech Stack</h6>
-                    <div className="flex flex-wrap gap-3 mb-4">
+                    <div className="flex flex-wrap gap-3 mb-4 ">
                       {project.technologies.map((tech) => (
                         <div
                           key={tech}
-                          className="flex items-center text-sm gap-2"
+                          className="flex items-center text-sm gap-2 "
                         >
                           <span>{technologyIcons[tech]}</span>{' '}
                           <span>{tech}</span>
