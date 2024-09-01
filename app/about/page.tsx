@@ -4,9 +4,8 @@ import {
   CodeBracketSquareIcon,
   CloudIcon,
   DevicePhoneMobileIcon,
-  ShieldCheckIcon,
-  DocumentTextIcon,
   WrenchScrewdriverIcon,
+  DocumentTextIcon,
 } from '@heroicons/react/24/outline'
 
 const AboutMeSection = () => {
@@ -22,97 +21,34 @@ const AboutMeSection = () => {
               University of Lahore.
             </p>
             <p className="text-lg mb-4">
-              I specialize in creating dynamic and engaging web applications. My
-              expertise spans both frontend and backend development. On the
-              frontend, I utilize Next.js and React.js to build interactive user
-              interfaces, while my backend development focuses on Node.js and
-              Express.js to create scalable server-side solutions.
+              As a recent graduate, I have dedicated my time to mastering web
+              development technologies and building a strong foundation in both
+              frontend and backend development. My academic projects and
+              personal endeavors have given me hands-on experience with tools
+              like React.js, Next.js, Express.js and Node.js.
             </p>
             <p className="text-lg mb-4">
-              I am passionate about continuous learning and applying new
-              technologies to solve real-world problems. My goal is to build
-              efficient, innovative, and user-centric solutions.
+              I am passionate about creating dynamic and responsive web
+              applications. I am continuously learning and applying new
+              technologies to solve real-world problems and build innovative
+              solutions.
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>REST API</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CloudIcon className="h-6 w-6 text-teal-400" />
-                <span>Firebase</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>Next.js</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>React.js</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <DevicePhoneMobileIcon className="h-6 w-6 text-teal-400" />
-                <span>Tailwind CSS</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>Express.js</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CloudIcon className="h-6 w-6 text-teal-400" />
-                <span>Node.js</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <WrenchScrewdriverIcon className="h-6 w-6 text-teal-400" />
-                <span>Supabase</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <WrenchScrewdriverIcon className="h-6 w-6 text-teal-400" />
-                <span>MongoDB</span>
-              </div>
-              {/* <div className="flex items-center gap-3">
-                <ShieldCheckIcon className="h-6 w-6 text-teal-400" />
-                <span>API Integration</span>
-              </div> */}
-              {/* <div className="flex items-center gap-3">
-                <CloudIcon className="h-6 w-6 text-teal-400" />
-                <span>OAuth</span>
-              </div> */}
-              <div className="flex items-center gap-3">
-                <DocumentTextIcon className="h-6 w-6 text-teal-400" />
-                <span>ESLint</span>
-              </div>
-              {/* <div className="flex items-center gap-3">
-                <WrenchScrewdriverIcon className="h-6 w-6 text-teal-400" />
-                <span>NoSQL</span>
-              </div> */}
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>TypeScript</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>CSS</span>
-              </div>
-              {/* <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>Redux</span>
-              </div> */}
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>JavaScript</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CodeBracketSquareIcon className="h-6 w-6 text-teal-400" />
-                <span>HTML</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <DocumentTextIcon className="h-6 w-6 text-teal-400" />
-                <span>ClerkJS</span>
-              </div>
+            <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
+            <p className="text-lg mb-4">
+              My journey in web development began with a fascination for
+              technology and a desire to build things from scratch. I enjoy
+              working on diverse projects that challenge me to think creatively
+              and solve complex problems. My goal is to continue growing as a
+              developer and contribute to impactful projects.
+            </p>
+            <div className="flex flex-wrap gap-6 items-center">
+              <CodeBracketSquareIcon className="h-8 w-8 text-teal-400" />
+              <CloudIcon className="h-8 w-8 text-teal-400" />
+              <DevicePhoneMobileIcon className="h-8 w-8 text-teal-400" />
+              <WrenchScrewdriverIcon className="h-8 w-8 text-teal-400" />
+              <DocumentTextIcon className="h-8 w-8 text-teal-400" />
             </div>
           </div>
         </div>
