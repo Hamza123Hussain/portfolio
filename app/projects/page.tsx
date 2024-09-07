@@ -40,6 +40,7 @@ import { MdOutlineNotifications, MdWidgets } from 'react-icons/md'
 import { TbApi, TbBrandReact, TbBrandVercel } from 'react-icons/tb'
 import { RiReactjsLine } from 'react-icons/ri'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Define the types for project and technology icons
 // Define the types for project and technology icons
@@ -438,10 +439,12 @@ const ProjectsSection: FC = () => {
               key={project.title}
               className="bg-gray-800 rounded-lg shadow-lg flex flex-col border-2 border-slate-600"
             >
-              <img
+              <Image
+                width={500}
+                height={200}
                 src={project.image}
                 alt={project.title}
-                className="w-full object-cover"
+                className="w-full sm:h-[30vh] object-cover"
               />
               <div className="flex flex-col flex-grow">
                 <div className="p-6 flex-grow">
