@@ -6,6 +6,8 @@ import {
   FaNodeJs,
   FaCss3Alt,
   FaDatabase,
+  FaShieldAlt,
+  FaLock,
   FaNode,
   FaJsSquare,
   FaTerminal,
@@ -89,6 +91,9 @@ type Technology =
   | 'UUID'
   | 'Auth0'
   | 'ShadCN UI'
+  | 'Mongoose'
+  | 'JWT'
+  | 'bcrypt'
   | 'Clerk'
   | 'Socket.IO'
   | 'Redux'
@@ -99,6 +104,8 @@ type Technology =
 
 // Define icons for technologies
 const technologyIcons: Record<Technology, JSX.Element> = {
+  bcrypt: <FaShieldAlt />,
+  JWT: <FaLock />,
   'Gemini AI': <TbApi />, // Using a generic API icon (Tabler Icons)
   'ShadCN UI': <MdWidgets />, // UI library icon
   Clerk: <SiClerk />, // Clerk official icon
@@ -130,7 +137,7 @@ const technologyIcons: Record<Technology, JSX.Element> = {
   'Shadn UI': (
     <SiShadcnui className="inline-block w-6 h-6 mr-2 text-gray-600" />
   ),
-
+  Mongoose: <FaDatabase className="inline-block w-6 h-6 mr-2 text-green-600" />,
   'Neon Postgres': (
     <FaDatabase className="inline-block w-6 h-6 mr-2 text-gray-600" />
   ), // Placeholder icon
@@ -390,6 +397,25 @@ const projects: Project[] = [
     technologies: ['Next.js', 'Node.js', 'Firebase'],
     link: 'https://baig-farm-project-ag7l.vercel.app/',
     image: '/6.png',
+  },
+  {
+    title: 'AuctionApex',
+    description:
+      'AuctionApex is a cutting-edge web application designed to revolutionize online auctions. This project features a user-friendly interface, real-time updates, and robust backend and frontend technologies.',
+    image: '/14.png', // Provide an image URL or screenshot if you have one
+    link: 'https://auction-apex.vercel.app',
+    technologies: [
+      'React.js',
+      'Tailwind CSS',
+      'Axios',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Mongoose',
+      'Socket.IO',
+      'JWT',
+      'bcrypt',
+    ],
   },
 ]
 
