@@ -12,6 +12,9 @@ import {
   FaJsSquare,
   FaTerminal,
   FaServer,
+  FaGithub,
+  FaImage,
+  FaRoute,
 } from 'react-icons/fa'
 import {
   SiTailwindcss,
@@ -33,6 +36,7 @@ import {
   AiOutlineBranches,
   AiOutlineFile,
   AiOutlineRead,
+  AiOutlineRight,
   AiOutlineRobot,
 } from 'react-icons/ai'
 import { GiClapperboard, GiSandsOfTime } from 'react-icons/gi'
@@ -102,9 +106,15 @@ type Technology =
   | 'Helmet'
   | 'Morgan'
   | 'Gemini AI'
+  | 'GitHub'
+  | 'pica.js'
+  | 'React Router'
 
 // Define icons for technologies
 const technologyIcons: Record<Technology, JSX.Element> = {
+  GitHub: <FaGithub />,
+  'pica.js': <FaImage />,
+  'React Router': <FaRoute />,
   bcrypt: <FaShieldAlt />,
   JWT: <FaLock />,
   'Gemini AI': <TbApi />, // Using a generic API icon (Tabler Icons)
@@ -416,6 +426,23 @@ const projects: Project[] = [
       'Socket.IO',
       'JWT',
       'bcrypt',
+    ],
+  },
+  {
+    title: 'UtilityHub',
+    description:
+      'A multifunctional platform offering tools such as a Color Picker, Unit Converter, Image Resizer, Text Formatter, and File Conversion tool.',
+    image: '/15.png',
+    link: 'https://utility-hub-phi.vercel.app',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'Express',
+      'pica.js',
+      'React Router',
+      'GitHub',
     ],
   },
 ]
