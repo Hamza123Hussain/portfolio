@@ -381,14 +381,14 @@ const projects: Project[] = [
     link: 'https://imdb-clone-seven-iota.vercel.app/',
     image: '/5.png',
   },
-  {
-    title: 'File Share Application',
-    description:
-      'The website allows users to share files with others via email. Users can upload files and specify recipient email addresses to send the files directly through the platform.',
-    technologies: ['Next.js', 'Node.js', 'Firebase', 'Nodemailer', 'Clerk'],
-    link: 'https://next-js-file-share-application.vercel.app/',
-    image: '/7.png',
-  },
+  // {
+  //   title: 'File Share Application',
+  //   description:
+  //     'The website allows users to share files with others via email. Users can upload files and specify recipient email addresses to send the files directly through the platform.',
+  //   technologies: ['Next.js', 'Node.js', 'Firebase', 'Nodemailer', 'Clerk'],
+  //   link: 'https://next-js-file-share-application.vercel.app/',
+  //   image: '/7.png',
+  // },
   {
     title: 'Logo Maker',
     description:
