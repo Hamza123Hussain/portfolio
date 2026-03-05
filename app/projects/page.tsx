@@ -28,6 +28,8 @@ import {
   SiClerk,
   SiSupabase,
   SiExpress,
+  SiPostgresql,
+  SiDrizzle,
 } from 'react-icons/si'
 import { BiLogoFirebase, BiLogoMongodb, BiLogoPhp } from 'react-icons/bi'
 import {
@@ -39,6 +41,7 @@ import {
   AiOutlineRight,
   AiOutlineRobot,
 } from 'react-icons/ai'
+import { HiLightningBolt } from 'react-icons/hi'
 import { GiClapperboard, GiSandsOfTime } from 'react-icons/gi'
 import { MdOutlineNotifications, MdWidgets } from 'react-icons/md'
 import { TbApi, TbBrandReact, TbBrandVercel } from 'react-icons/tb'
@@ -109,12 +112,19 @@ type Technology =
   | 'GitHub'
   | 'pica.js'
   | 'React Router'
+  | 'PostgreSQL'
+  | 'Server Actions'
+  | 'Drizzle ORM'
 
 // Define icons for technologies
 const technologyIcons: Record<Technology, JSX.Element> = {
   GitHub: <FaGithub />,
   'pica.js': <FaImage />,
   'React Router': <FaRoute />,
+  PostgreSQL: <SiPostgresql />,
+  'Server Actions': <HiLightningBolt />,
+  'Drizzle ORM': <SiDrizzle />,
+
   bcrypt: <FaShieldAlt />,
   JWT: <FaLock />,
   'Gemini AI': <TbApi />, // Using a generic API icon (Tabler Icons)
@@ -305,6 +315,21 @@ const projects: Project[] = [
     image: '/4.png',
   },
   {
+    title: 'InvoPro',
+    description:
+      'A professional-grade SaaS invoicing platform featuring a dynamic dashboard for real-time financial tracking, client management, and automated tax calculations.',
+    image: '/public/Screenshot 2026-03-05 153557.png', // Ensure you have a screenshot named this in your public folder
+    link: 'https://invo-pro-part-2.vercel.app/dashboard',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Server Actions',
+    ],
+  },
+  {
     title: 'Note Secure',
     description:
       'Note Secure is a sophisticated and secure web application designed to elevate your note-taking experience with the latest web technologies. It features powerful search functionality, efficient note organization, an elegant and responsive design, secure authentication, a robust backend, a scalable database, advanced state management, and real-time notifications.',
@@ -381,14 +406,28 @@ const projects: Project[] = [
     link: 'https://imdb-clone-seven-iota.vercel.app/',
     image: '/5.png',
   },
-  // {
-  //   title: 'File Share Application',
-  //   description:
-  //     'The website allows users to share files with others via email. Users can upload files and specify recipient email addresses to send the files directly through the platform.',
-  //   technologies: ['Next.js', 'Node.js', 'Firebase', 'Nodemailer', 'Clerk'],
-  //   link: 'https://next-js-file-share-application.vercel.app/',
-  //   image: '/7.png',
-  // },
+  {
+    title: 'FitTrack Elite',
+    description:
+      'A comprehensive fitness and wellness platform providing personalized workout tracking, exercise libraries, and data-driven progress monitoring.',
+    image: '/Screenshot 2026-03-05 153711.png',
+    link: 'https://fitness-gs.vercel.app/',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+  },
+  {
+    title: 'ProTask Manager',
+    description:
+      'A high-performance enterprise task management system featuring drag-and-drop workflows, real-time status tracking, and team collaboration tools.',
+    image: '/project-mgmt.png',
+    link: 'https://project-management-gs.vercel.app/',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'PostgreSQL',
+      'Server Actions',
+    ],
+  },
   {
     title: 'Logo Maker',
     description:
