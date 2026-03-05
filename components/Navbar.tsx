@@ -50,7 +50,7 @@ const Navbar = () => {
               Contact
             </Link>
             <a
-              href="/resume.pdf"
+              href="/Hamza Hussain CV.pdf"
               download
               className="bg-teal-400 text-gray-900 py-2 px-4 rounded hover:bg-gray-900 hover:text-teal-400 transition-colors"
             >
