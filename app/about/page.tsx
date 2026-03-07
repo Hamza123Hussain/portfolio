@@ -1,9 +1,7 @@
 import {
-  CodeBracketSquareIcon,
   CpuChipIcon, // Added for AI/Modern feel
   BoltIcon, // Added for Performance/Next.js
   Square3Stack3DIcon, // Added for Full-Stack
-  GlobeAsiaAustraliaIcon,
   BeakerIcon,
 } from '@heroicons/react/24/outline'
 
@@ -25,16 +23,16 @@ const AboutMeSection = () => {
             </p>
             <p className="text-lg leading-relaxed mb-6 text-gray-400">
               With a CS degree from the University of Lahore and a deep passion
-              for the **Next.js ecosystem**, I don’t just build websites—I build
+              for the Next.js ecosystem, I don’t just build websites—I build
               scalable digital experiences. My focus lies in bridging the gap
               between sophisticated backend logic and intuitive, pixel-perfect
               frontends.
             </p>
             <p className="text-lg leading-relaxed mb-8 text-gray-400">
-              Currently, I am focused on mastering **AI integration, Serverless
-              architectures, and Real-time data syncing**. Whether it’s a
-              high-traffic SaaS dashboard or an AI-driven automation tool, I
-              thrive on solving the impossible problems.
+              Currently, I am focused on mastering AI integration and Real-time
+              data syncing. Whether it’s a high-traffic SaaS dashboard or an
+              AI-driven automation tool, I thrive on solving the impossible
+              problems.
             </p>
 
             <div className="flex flex-wrap gap-4">
