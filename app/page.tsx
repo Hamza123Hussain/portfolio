@@ -123,22 +123,37 @@ const HomePage: FC = () => {
       </section>
 
       {/* About Preview */}
-      <section id="about" className="bg-gray-800 text-gray-200 py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
-            About Me
-          </h2>
-          <p className="text-base sm:text-lg mb-6">
-            I’m a passionate web developer with a strong foundation in frontend
-            and backend technologies. I specialize in creating dynamic and
-            responsive web applications with a focus on clean code and
-            user-friendly design. With experience in React, Next.js, and
-            Node.js, I enjoy solving complex problems and building impactful
-            digital experiences.
+      <section
+        id="about"
+        className="bg-gray-800 text-gray-200 py-16 px-6 border-y border-gray-700/50"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">About Me</h2>
+          <p className="text-base sm:text-lg mb-8 leading-relaxed">
+            I am a{' '}
+            <span className="text-teal-400 font-semibold">
+              Strategic Technical Lead
+            </span>{' '}
+            specialized in architecting high-concurrency ecosystems and
+            intelligent automation tools. With deep expertise in the{' '}
+            <span className="text-white">Next.js and Node.js</span> stack, I
+            have a proven track record of delivering scalable enterprise CRMs
+            and AI-powered assessment portals from MVP to global deployment. I
+            focus on bridging the gap between complex business KPIs and
+            high-performance technical roadmaps.
           </p>
-          <div className="text-center">
-            <a href="/about" className="text-teal-400 hover:underline">
-              Read More
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a
+              href="/about"
+              className="px-8 py-3 bg-teal-500 text-gray-900 font-bold rounded-lg hover:bg-teal-400 transition-all w-full sm:w-auto text-center"
+            >
+              View Full Profile
+            </a>
+            <a
+              href="#projects"
+              className="px-8 py-3 border border-teal-500 text-teal-400 font-bold rounded-lg hover:bg-teal-500/10 transition-all w-full sm:w-auto text-center"
+            >
+              Explore Projects
             </a>
           </div>
         </div>
